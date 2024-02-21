@@ -12,13 +12,12 @@ import PopupWidget from "../components/popupWidget";
 import { motion } from "framer-motion";
 export default function Home() {
   return (
-    <div className="px-5">
+    <div className="p-0">
 
       <Hero />
       <SectionTitle
-        pretitle="Benefits / heading / question "
-        title=" subtitle / subheading  / answer">
-        Sub Heading
+        pretitle=" "
+        title="Available Research Courses">
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />

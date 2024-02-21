@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/heroimage/Particles.js", "components/heroimage/heroImage.js", "heroimage/HeroImage.js"],
   "exclude": ["node_modules"]
 }

@@ -21,7 +21,7 @@ const PopupWidget = () => {
 
   const onSubmit = async (data, e) => {
     console.log(data);
-    await fetch("https://api.web3forms.com/submit", {
+    await fetch("", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

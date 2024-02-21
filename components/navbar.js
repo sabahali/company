@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
+      <nav className="container relative flex flex-wrap items-center justify-between pt-8 pb-0 mx-auto lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (
@@ -26,14 +26,14 @@ const Navbar = () => {
                   <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
                       <Image
-                        src="/img/logo.svg"
-                        alt="N"
-                        width="32"
-                        height="32"
-                        className="w-8"
+                        src="/symbol.png"
+                        alt="symbol"
+                        width={50}
+                        height={50}
+                        className=""
                       />
                     </span>
-                    <span>Company Name</span>
+                    
                   </span>
                 </Link>
 

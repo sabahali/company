@@ -1,35 +1,39 @@
 import {
   FaceSmileIcon,
   ChartBarSquareIcon,
-  CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
+  MagnifyingGlassIcon,
+  PresentationChartBarIcon,
+  DocumentMagnifyingGlassIcon
 } from "@heroicons/react/24/solid";
 
 import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "description to add",
+  title: "Research in Psychology",
+  desc: "Explore diverse methodologies uncovering human behavior and cognition in psychological research.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "title",
-      desc: "Description",
-      icon: <FaceSmileIcon />,
+      title: "Research: Overview",
+      desc: " Research Process & Sampling - Identify problems, hypotheses, variables, and sampling methods.",
+      icon: <MagnifyingGlassIcon />,
     },
-    // {
-    //   title: "Improve acquisition",
-    //   desc: "Here you can add the next benefit point.",
-    //   icon: <ChartBarSquareIcon />,
-    // },
-    // {
-    //   title: "Drive customer retention",
-    //   desc: "This will be your last bullet point in this section.",
-    //   icon: <CursorArrowRaysIcon />,
-    // },
+    {
+      title: "Basics of statistics",
+      desc: "Learn measurement levels, central tendency, dispersion, small sample tests, non-parametric tests, and testing fundamentals.",
+      icon: <ChartBarSquareIcon />,
+    },
+    {
+      title: "Data Collection & Literature Review",
+      desc: "Explore techniques like questionnaires, interviews, and content analysis. Utilize digital libraries for literature review.",
+      icon: <DocumentMagnifyingGlassIcon />,
+    },
+    {
+      title: "Data Analysis & Report Writing",
+      desc: "Learn data presentation, SPSS analysis, research report structure (APA style), journal publication, plagiarism, and conference paper presentation.",
+      icon: <PresentationChartBarIcon />,
+    },
   ],
 };
 
