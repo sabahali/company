@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-import HeroAnim from '@/heroimage/psych'
+import Psych from '@/Lottiefiles/Psych'
 const Benefits = (props) => {
   const { data } = props;
   return (
@@ -24,7 +24,7 @@ const Benefits = (props) => {
           </div>
           <div className="w-3/2  pt-10 lg:w-[40vw]">
 
-            <HeroAnim />
+            <Psych />
           </div>
         </div>
 

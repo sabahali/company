@@ -1,18 +1,10 @@
 "use client"
-import dynamic from 'next/dynamic'
-import Image from "next/image";
 import Container from "./container";
-import { motion, stagger, useAnimate } from "framer-motion";
+import { motion } from "framer-motion";
 import { TypewriterEffect } from "./typewriter-effect";
 import { TextGenerateEffect } from "./text-generate-effect";
 import { InfiniteMovingCards } from "./infinite-moving-cards";
-import { Suspense } from "react";
-import { useEffect } from "react";
-import HeroAnim from '@/heroimage/HeroAnim'
-// import WordCloud from '@/heroimage/WordCloud'
-const DynamicHeader = dynamic(() => import('@/heroimage/WordCloud'), {
-  ssr: false,
-})
+import HeroAnim from '@/Lottiefiles/HeroAnim'
 const testimonials = [
   {
     quote:
