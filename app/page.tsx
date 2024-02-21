@@ -17,7 +17,9 @@ export default function Home() {
       <Hero />
       <SectionTitle
         pretitle=" "
-        title="Available Research Courses">
+        title="Available Research Courses"
+        
+        >
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
