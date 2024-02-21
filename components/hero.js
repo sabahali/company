@@ -96,14 +96,15 @@ const Hero = () => {
     },
     {
       text: "L",
-      
-    },
+    }
+    
   ];
-  const subheading = `Fostering Innovative Research Acadamy`
+
+  const subheading = `Fostering Innovative Research Academy`
   return (
     <>
       <Container className="flex  flex-wrap items-center justify-center w-full ">
-        <div className="flex p-8  items-center justify-start w-full xl:w-1/2 mb-[10vh] sm:mb-0 ">
+        <div id="home" className="flex p-8  items-center justify-start w-full xl:w-1/2 mb-[10vh] sm:mb-0 ">
           <div className="flex flex-col w-full justify-center items-start lg:pl-10">
             <div className="font-bold">
 
@@ -114,14 +115,14 @@ const Hero = () => {
 
               <TextGenerateEffect words={subheading} />
             </div>
-              
-            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+
+            <div className="flex">
               <a
                 href="#"
                 target="_blank"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-blue-600 hover:bg-blue-800 rounded-md ">
-                Register Now 
+                className="px-4 py-2 md:px-8 md:py-4 text-lg font-medium text-center text-white bg-blue-600 hover:bg-blue-800 rounded-md ">
+                Register Now
               </a>
               {/* <a
                 href="#"
@@ -153,13 +154,13 @@ const Hero = () => {
             transition={{
               duration: 0.3,
               ease: [0, 0.71, 0.2, 1.01],
-              
+
               scale: {
                 type: "spring",
                 damping: 5,
                 stiffness: 100,
                 restDelta: 0.001,
-                
+
               }
             }}
           >
@@ -172,15 +173,15 @@ const Hero = () => {
                 loading="eager"
                 placeholder="blur"
               /> */}
-            
-            
-            <HeroAnim/>
+
+
+            <HeroAnim />
           </motion.div>
         </div>
 
       </Container>
       <Container>
-        <div className=" flex flex-col w-full justify-around items-center h-screen overflow-hidden">
+        <div id='features' className=" flex flex-col w-full justify-around items-center h-screen overflow-hidden">
           <InfiniteMovingCards
             items={testimonials}
             direction="right"

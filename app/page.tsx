@@ -16,6 +16,7 @@ export default function Home() {
 
       <Hero />
       <SectionTitle
+        id='courses'
         pretitle=" "
         title="Available Research Courses"
         
@@ -25,6 +26,7 @@ export default function Home() {
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
         pretitle="Watch a video"
+        id="company"
         title="Learn how to fullfil your needs">
            Heading for Video About Institute 
       </SectionTitle>
@@ -35,7 +37,7 @@ export default function Home() {
           Testimonials for Institute
       </SectionTitle>
       <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
+      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions" id="faq">
         Possible
       </SectionTitle>
       <Faq />

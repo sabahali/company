@@ -56,7 +56,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={idx == 1 ? "text-base leading-normal text-blue-500  md:text-xl lg:text-2xl xl:text-3xl opacity-0" : " md:text-xl text-base leading-normal text-gray-500 lg:text-2xl xl:text-3xl dark:text-gray-300 opacity-0"}
+              className={idx == 3 || idx == 2? "text-md leading-normal text-blue-500  md:text-2xl lg:text-3xl xl:text-4xl opacity-0" : " md:text-xl text-base leading-normal text-gray-500 lg:text-2xl xl:text-3xl dark:text-gray-300 opacity-0"}
             >
               {word}{" "}
             </motion.span>
@@ -69,7 +69,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="">
-        <div className=" dark:text-white text-black text-2xl leading-snug tracking-wide">
+        <div className=" flex flex-nowrap">
           {renderWords()}
         </div>
       </div>
