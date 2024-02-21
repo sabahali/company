@@ -2,11 +2,12 @@
 import dynamic from 'next/dynamic'
 import Image from "next/image";
 import Container from "./container";
-import { motion } from "framer-motion";
+import { motion, stagger, useAnimate } from "framer-motion";
 import { TypewriterEffect } from "./typewriter-effect";
 import { TextGenerateEffect } from "./text-generate-effect";
 import { InfiniteMovingCards } from "./infinite-moving-cards";
 import { Suspense } from "react";
+import { useEffect } from "react";
 import HeroAnim from '@/heroimage/HeroAnim'
 // import WordCloud from '@/heroimage/WordCloud'
 const DynamicHeader = dynamic(() => import('@/heroimage/WordCloud'), {
@@ -75,30 +76,30 @@ const testimonials = [
     title: "Uphold Ethical Values",
   },
 ];
+const words = [
+  {
+    text: "S",
+  },
+  {
+    text: "Y",
+  },
+  {
+    text: "M",
+  },
+  {
+    text: "B",
+  },
+  {
+    text: "O",
+    className: "text-blue-500 dark:text-blue-500",
+  },
+  {
+    text: "L",
+  }
 
+];
 const Hero = () => {
-  const words = [
-    {
-      text: "S",
-    },
-    {
-      text: "Y",
-    },
-    {
-      text: "M",
-    },
-    {
-      text: "B",
-    },
-    {
-      text: "O",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-    {
-      text: "L",
-    }
-    
-  ];
+
 
   const subheading = `Fostering Innovative Research Academy`
   return (
@@ -116,7 +117,23 @@ const Hero = () => {
               <TextGenerateEffect words={subheading} />
             </div>
 
-            <div className="flex">
+            <motion.div className="flex"
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+
+                scale: {
+                  type: "spring",
+                  damping: 5,
+                  stiffness: 100,
+                  restDelta: 0.001,
+
+                }
+              }}
+            >
               <a
                 href="#"
                 target="_blank"
@@ -142,11 +159,12 @@ const Hero = () => {
                 </svg>
                 <span> View on Github / Special Mention to add ?</span>
               </a> */}
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className=" container  flex flex-col flex-wrap justify-center pt-0  lg:pt-[10vh] items-center  sm:w-[70vw]  w-full h-full xl:w-1/2 md:w-2/3">
           <motion.div
+
             className="h-full w-full "
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
