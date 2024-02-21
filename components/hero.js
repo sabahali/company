@@ -102,9 +102,9 @@ const Hero = () => {
   const subheading = `Fostering Innovative Research Acadamy`
   return (
     <>
-      <Container className="flex  flex-wrap p-8 items-center justify-center w-full h-[90vh]">
-        <div className="flex items-center justify-start w-full lg:w-1/2 mb-[10vh] sm:mb-0 ">
-          <div className="max-w-2xl flex flex-col w-full justify-center items-start lg:pl-10">
+      <Container className="flex  flex-wrap items-center justify-center w-full ">
+        <div className="flex p-8  items-center justify-start w-full xl:w-1/2 mb-[10vh] sm:mb-0 ">
+          <div className="flex flex-col w-full justify-center items-start lg:pl-10">
             <div className="font-bold">
 
               <TypewriterEffect words={words} />
@@ -144,7 +144,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col flex-wrap justify-center mt-0 sm:pt-[10vh] md:pt-[20vh] lg:pt-[10vh] items-center xs:w-[60vw] sm:w-[70vw] h-full w-full lg:w-1/2 md:w-2/3">
+        <div className=" container  flex flex-col flex-wrap justify-center pt-0  lg:pt-[10vh] items-center  sm:w-[70vw]  w-full h-full xl:w-1/2 md:w-2/3">
           <motion.div
             className="h-full w-full "
             initial={{ opacity: 0, scale: 0.5 }}
